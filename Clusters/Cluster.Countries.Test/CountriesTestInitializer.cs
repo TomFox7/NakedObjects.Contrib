@@ -1,9 +1,6 @@
-﻿using System;
-using System.Data.Entity;
-using System.IO;
+﻿using System.Data.Entity;
 using Cluster.Countries.Api;
 using Cluster.Countries.Impl;
-
 
 namespace Cluster.Countries.Test
 {
@@ -13,8 +10,7 @@ namespace Cluster.Countries.Test
         {
             AllCountries(context);
         }
-
-
+		
         public static void AllCountries(ICountriesDbContext context)
         {
             DbSet<Country> dbSet = context.Countries;
@@ -41,4 +37,3 @@ namespace Cluster.Countries.Test
 
    }
 }
-
